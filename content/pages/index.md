@@ -9,9 +9,12 @@ sections:
       type: TitleBlock
     subtitle: Executive search agency worth your time.
     text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+      Choose a partner you can trust. With over 10 years of experience in
+      managing our clients recruitment processes and finding niche experts, we
+      are confident that we can fill almost any role internationally. We pride
+      ourselves on the delivery times and satisfied clients. With prolonged
+      guaranteed replacement times of our placements, you can rest assured you
+      get the best.
     actions:
       - label: Get started
         altText: ''
