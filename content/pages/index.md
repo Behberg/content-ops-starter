@@ -67,10 +67,9 @@ sections:
       - type: FeaturedItem
         title: Success based search
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          The classic way to work with a recruitment agency, no up front
+          payments.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
