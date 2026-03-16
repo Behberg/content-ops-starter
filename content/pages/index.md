@@ -346,7 +346,9 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Although we try to help with all our client recuritment needs,
+    subtitle: >-
+      Although we try to help with all our client recruitment needs, these are
+      the ones we outshine our competition in.
     items:
       - title: Feature Item One
         tagline: This is the tagline
