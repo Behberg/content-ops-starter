@@ -352,7 +352,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Software Development
-        subtitle: Numbers Done
+        subtitle: ''
         text: ''
         image:
           type: ImageBlock
