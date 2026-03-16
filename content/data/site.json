@@ -1,7 +1,7 @@
 {
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/behberg-favicon.jpeg",
     "footer": "content/data/footer.json",
-    "titleSuffix": "Theme Demo",
+    "titleSuffix": "B&B Recruitment",
     "defaultSocialImage": "/images/main-hero.jpg",
     "type": "Config",
     "header": "content/data/header.json"

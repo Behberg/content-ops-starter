@@ -243,7 +243,7 @@ function MobileMenu(props) {
 function SiteLogoLink({ title, logo, enableAnnotations }) {
     return (
         <Link href="/" className="flex items-center">
-            {logo && <ImageBlock {...logo} {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
+            {logo && <ImageBlock {...logo} imageClassName="max-h-16 w-auto" {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
             {title && (
                 <span className="h4" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
                     {title}
