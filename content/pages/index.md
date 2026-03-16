@@ -253,10 +253,10 @@ sections:
       - title: First candidates within 48 hours
         tagline: Reason nr. 1
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Once a role has been assigned to us, we execute it with quality and
+          precision. Often we already have a good backlog of candidates that we
+          can offer from the get go.
         image:
           altText: Maria Walters
           styles:
