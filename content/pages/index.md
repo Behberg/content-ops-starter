@@ -94,10 +94,10 @@ sections:
               borderRadius: x-large
       - title: Recruitment subscription
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          A lot of roles to fill or just looking for a long term partner? Now
+          you can also subscribe to our services and have guaranteed service and
+          a lower cost.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
