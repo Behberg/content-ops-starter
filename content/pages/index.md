@@ -250,9 +250,7 @@ sections:
     title: null
     subtitle: ''
     items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
+      - title: First candidates within 48 hours
         tagline: Reason nr. 1
         subtitle: Maria Walters, Company
         text: >-
