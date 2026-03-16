@@ -45,6 +45,13 @@ sections:
           - pb-16
           - pr-16
         justifyContent: flex-end
+    backgroundImage:
+      type: BackgroundImage
+      altText: altText of the image
+      backgroundSize: auto
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 100
   - type: FeaturedItemsSection
     title:
       text: About Our Services
