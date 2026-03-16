@@ -26,7 +26,6 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/AUTOSTĀVVIETAS CARULAIDE (18 x 13 cm).png
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
