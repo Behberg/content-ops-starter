@@ -356,7 +356,7 @@ sections:
         text: ''
         image:
           type: ImageBlock
-          url: /images/Untitled design (6).png
+          url: /images/Untitled design (10).png
           altText: Placeholder text
           elementId: ''
           styles:
