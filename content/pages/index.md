@@ -485,6 +485,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
+      url: /images/pexels-codioful-7130566.jpg
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.
