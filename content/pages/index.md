@@ -184,7 +184,7 @@ sections:
       - url: /images/Untitled design (4).png
         altText: Contentful logo
         type: ImageBlock
-      - url: /images/sanity-logo.svg
+      - url: /images/Untitled design (5).png
         altText: Sanity logo
         type: ImageBlock
       - url: /images/rangle-logo.svg
