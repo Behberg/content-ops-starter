@@ -340,7 +340,7 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: List of features here
+      text: Our field of expertise
       color: text-primary
       styles:
         self:
