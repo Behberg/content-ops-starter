@@ -18,7 +18,7 @@ sections:
     actions:
       - label: Get started
         altText: ''
-        url: /
+        url: mailto:info@behberg.com
         showIcon: false
         icon: arrowRight
         iconPosition: right
