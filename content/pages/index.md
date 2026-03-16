@@ -350,30 +350,6 @@ sections:
       Although we try to help with all our client recruitment needs, these are
       the ones we outshine our competition in.
     items:
-      - type: FeaturedItem
-        title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
-        image:
-          type: ImageBlock
-          url: /images/abstract-feature1.svg
-          altText: Placeholder text
-          styles:
-            self:
-              borderRadius: x-large
-        actions: []
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
       - title: Feature Item Two
         tagline: This is the tagline
         subtitle: This is the item subtitle
