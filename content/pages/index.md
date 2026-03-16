@@ -215,7 +215,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
+    subtitle: Why our partners keep choosing us?
     text: >+
       <div style="text-align: center">First candidates within 48 hoursUp to 6
       month guarantee period90% retention rate to date</div>
