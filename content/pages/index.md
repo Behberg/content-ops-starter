@@ -355,13 +355,6 @@ sections:
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
         colors: bg-light-fg-dark
         styles:
           self:
