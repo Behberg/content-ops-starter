@@ -280,10 +280,10 @@ sections:
       - title: Up to 6 month guarantee period
         tagline: Reason nr. 2
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Most of the time, a 3 month probation period is not enough. We offer
+          up to 6 months of our guarantees in which we offer to replace the
+          candidate, free of charge.
         image:
           altText: John Doe
           styles:
