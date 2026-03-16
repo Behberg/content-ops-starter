@@ -366,6 +366,11 @@ sections:
             borderRadius: x-large
             flexDirection: col
             textAlign: center
+            margin:
+              - mt-7
+              - ml-7
+              - mb-7
+              - mr-7
         type: FeaturedItem
       - type: FeaturedItem
         title: Feature Item One
