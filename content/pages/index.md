@@ -350,7 +350,7 @@ sections:
       Although we try to help with all our client recruitment needs, these are
       the ones we outshine our competition in.
     items:
-      - title: Feature Item One
+      - title: Software Developemnt
         tagline: ''
         subtitle: This is the item subtitle
         text: |
