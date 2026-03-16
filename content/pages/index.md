@@ -346,7 +346,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Featured items section subtitle
+    subtitle: Although we try to help with all our client recuritment needs,
     items:
       - title: Feature Item One
         tagline: This is the tagline
