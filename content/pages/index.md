@@ -439,7 +439,7 @@ sections:
         textAlign: center
     type: FeaturedItemsSection
   - title:
-      text: Generic Section With A Form
+      text: Hire with us today!
       color: text-dark
       type: TitleBlock
     subtitle: Section with a form subtitle
