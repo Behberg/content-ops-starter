@@ -377,7 +377,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: Risk & Compliance
-        subtitle: Numbers Done
+        subtitle: ''
         text: ''
         image:
           type: ImageBlock
