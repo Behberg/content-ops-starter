@@ -52,7 +52,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
-      url: /images/pexels-pppsdavid-2684383.jpg
+      url: /images/pexels-codioful-7130566.jpg
   - type: FeaturedItemsSection
     title:
       text: About Our Services
