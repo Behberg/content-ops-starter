@@ -175,7 +175,7 @@ sections:
       - url: /images/Untitled design (1).png
         altText: Industrial Bank of China logo
         type: ImageBlock
-      - url: /images/allianz-1.svg
+      - url: /images/Untitled design (2).png
         altText: Vise logo
         type: ImageBlock
       - url: /images/telus-logo.svg
