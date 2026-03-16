@@ -217,8 +217,10 @@ sections:
       type: TitleBlock
     subtitle: Why our partners keep choosing us?
     text: >+
-      <div style="text-align: center">First candidates within 48 hoursUp to 6
-      month guarantee period90% retention rate to date</div>
+      <div style="text-align: left"># First candidates within 48 hours# Up to 6
+      month guarantee period# 90% retention rate to date</div>
+
+
 
     badge:
       label: Key Benefits
