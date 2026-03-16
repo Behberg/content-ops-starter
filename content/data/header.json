@@ -13,7 +13,7 @@
     },
     "primaryLinks": [],
     "secondaryLinks": [],
-    "variant": "logo-left-primary-nav-left",
+    "variant": "logo-centered-primary-nav-left",
     "colors": "bg-light-fg-dark",
     "type": "Header"
 }
