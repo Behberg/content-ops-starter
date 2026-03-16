@@ -173,7 +173,7 @@ sections:
   - subtitle: Award winning enterprises trust us
     images:
       - url: /images/images.png
-        altText: Wellster logo
+        altText: Industrial Bank of China logo
         type: ImageBlock
       - url: /images/vise-logo.svg
         altText: Vise logo
