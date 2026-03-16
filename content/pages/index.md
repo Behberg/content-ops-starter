@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Hire
+      text: "Your partner in\_staffing & recruiting"
       color: text-dark
       type: TitleBlock
     subtitle: Subtitle goes here
