@@ -402,7 +402,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: 'Product Management '
-        subtitle: Numbers Done
+        subtitle: ''
         text: ''
         image:
           type: ImageBlock
