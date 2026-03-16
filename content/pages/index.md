@@ -8,13 +8,7 @@ sections:
       color: text-dark
       type: TitleBlock
     subtitle: Executive search agency worth your time.
-    text: >
-      Choose a partner you can trust. With over 10 years of experience in
-      managing our clients recruitment processes and finding niche experts, we
-      are confident that we can fill almost any role internationally. We pride
-      ourselves on the delivery times and satisfied clients. With prolonged
-      guaranteed replacement times of our placements, you can rest assured you
-      get the best.
+    text: ''
     actions:
       - label: Get started
         altText: ''
@@ -26,7 +20,6 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/AUTOSTĀVVIETAS CARULAIDE (18 x 13 cm).png
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
@@ -45,6 +38,15 @@ sections:
           - pl-16
           - pb-16
           - pr-16
+        justifyContent: flex-start
+    backgroundImage:
+      type: BackgroundImage
+      altText: altText of the image
+      backgroundSize: auto
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 100
+      url: /images/pexels-codioful-7130566.jpg
   - type: FeaturedItemsSection
     title:
       text: About Our Services
@@ -227,16 +229,6 @@ sections:
       text:
         textAlign: center
     type: GenericSection
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
   - type: CarouselSection
     title: null
     subtitle: ''
@@ -429,6 +421,30 @@ sections:
       subtitle:
         textAlign: center
     type: FeaturedItemsSection
+  - type: FeaturedPeopleSection
+    title:
+      type: TitleBlock
+      text: Meet the team
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    people:
+      - content/data/person2.json
+      - content/data/person3.json
+    actions: []
+    variant: three-col-grid
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
+        justifyContent: center
+      subtitle:
+        textAlign: center
   - title:
       text: Hire with us today!
       color: text-dark
@@ -486,6 +502,14 @@ sections:
       type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
+    backgroundImage:
+      type: BackgroundImage
+      altText: altText of the image
+      backgroundSize: auto
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 100
+      url: /images/pexels-codioful-7130566.jpg
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.

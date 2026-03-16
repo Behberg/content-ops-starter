@@ -1,9 +1,9 @@
 {
     "type": "Person",
-    "name": "Faizah Chan",
-    "role": "Co-founder & CEO",
+    "name": "Krists Afanasjevs",
+    "role": "Co-founder",
     "image": {
-        "url": "/images/avatar2.svg",
+        "url": "/images/Image (1).jpeg",
         "altText": "Faizah Chan",
         "styles": {
             "self": {
@@ -33,5 +33,5 @@
             "justifyContent": "center"
         }
     },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "bio": "Krists is an experienced headhunter in the legal and banking industry with deep knowledge in acquiring talent not easily attainable.\n"
 }
