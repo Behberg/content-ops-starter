@@ -68,7 +68,7 @@
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "mailto:info@behberg.com",
             "icon": "mail",
             "type": "Social"
         }
