@@ -216,14 +216,9 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: This is a subtitle
-    text: |+
-      First candidates within 48 hours
-
-      Up to 6 month guarantee period
-
-      90% retention rate to date
-
-
+    text: >+
+      <div style="text-align: center">First candidates within 48 hoursUp to 6
+      month guarantee period90% retention rate to date</div>
 
     badge:
       label: Key Benefits
