@@ -52,6 +52,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
+      url: /images/abstract-feature2.svg
   - type: FeaturedItemsSection
     title:
       text: About Our Services
