@@ -172,7 +172,7 @@ sections:
         textAlign: center
   - subtitle: Award winning enterprises trust us
     images:
-      - url: /images/images.png
+      - url: /images/Untitled design.png
         altText: Industrial Bank of China logo
         type: ImageBlock
       - url: /images/allianz-1.svg
