@@ -277,9 +277,7 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to
-          accomplish a particular purpose."
+      - title: Up to 6 month guarantee period
         tagline: Reason nr. 2
         subtitle: John Doe, Company
         text: >-
