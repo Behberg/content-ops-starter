@@ -44,7 +44,7 @@ sections:
           - pl-16
           - pb-16
           - pr-16
-        justifyContent: flex-end
+        justifyContent: flex-start
     backgroundImage:
       type: BackgroundImage
       altText: altText of the image
