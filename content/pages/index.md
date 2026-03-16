@@ -8,13 +8,7 @@ sections:
       color: text-dark
       type: TitleBlock
     subtitle: Executive search agency worth your time.
-    text: >
-      Choose a partner you can trust. With over 10 years of experience in
-      managing our clients recruitment processes and finding niche experts, we
-      are confident that we can fill almost any role internationally. We pride
-      ourselves on the delivery times and satisfied clients. With prolonged
-      guaranteed replacement times of our placements, you can rest assured you
-      get the best.
+    text: ''
     actions:
       - label: Get started
         altText: ''
