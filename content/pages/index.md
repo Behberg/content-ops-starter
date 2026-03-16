@@ -381,7 +381,7 @@ sections:
         text: ''
         image:
           type: ImageBlock
-          url: /images/icon1.svg
+          url: /images/Untitled design (11).png
           altText: Placeholder text
           elementId: ''
           styles:
