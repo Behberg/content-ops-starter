@@ -52,7 +52,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
-      url: /images/abstract-feature2.svg
+      url: /images/pexels-pppsdavid-2684383.jpg
   - type: FeaturedItemsSection
     title:
       text: About Our Services
