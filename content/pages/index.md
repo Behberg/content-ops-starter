@@ -307,10 +307,10 @@ sections:
       - title: 90% retention rate - to date.
         tagline: Reason nr. 3
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          We wear our placements like a badge of honour. Our precision and deep
+          diving into our client needs allow us to deliver top of the line
+          candidates and this is also visible in our retention rate.
         image:
           altText: Maria Walters
           styles:
