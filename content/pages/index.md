@@ -220,7 +220,7 @@ sections:
       <div style="text-align: left"></div>
 
     badge:
-      label: Key Benefits
+      label: ''
       color: text-primary
       styles:
         self:
