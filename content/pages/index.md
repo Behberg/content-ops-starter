@@ -44,7 +44,7 @@ sections:
           - pl-16
           - pb-16
           - pr-16
-        justifyContent: flex-start
+        justifyContent: flex-end
   - type: FeaturedItemsSection
     title:
       text: About Our Services
