@@ -298,7 +298,7 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8" ref={expertiseRef}>
+            <div className="grid md:grid-cols-3 gap-4" ref={expertiseRef}>
               {[
                 {
                   name: 'Software Development',
@@ -321,15 +321,15 @@ const HomePage = () => {
                   icon: FileText,
                 },
                 {
-                  name: 'Executive Search',
-                  icon: Users,
+                  name: 'Asset Management',
+                  icon: TrendingUp,
                 },
               ].map((expertise, idx) => {
                 const Icon = expertise.icon;
                 return (
                   <div
                     key={idx}
-                    className="group glass p-8 rounded-xl border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
+                    className="group glass p-4 rounded-xl border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
                     style={{
                       opacity: expertiseInView ? 1 : 0,
                       transform: expertiseInView ? 'translateY(0)' : 'translateY(20px)',
@@ -342,7 +342,7 @@ const HomePage = () => {
                         <Icon className="w-6 h-6 text-blue-300" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold">{expertise.name}</h3>
+                    <h3 className="text-sm font-bold">{expertise.name}</h3>
                   </div>
                 );
               })}
@@ -431,8 +431,8 @@ const HomePage = () => {
                       <img
                         src={logo}
                         alt={`Client ${idx + 1}`}
-                        className="h-20 object-contain opacity-70 hover:opacity-100 transition rounded-lg p-2"
-                        style={{ filter: 'invert(1) brightness(1.1)', backgroundColor: '#1a1f3a', background: '#1a1f3a' }}
+                        className="h-20 object-contain opacity-70 hover:opacity-100 transition"
+                        style={{ filter: 'invert(1) brightness(1.1)' }}
                       />
                     </div>
                   ))}
