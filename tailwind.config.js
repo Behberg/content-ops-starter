@@ -20,7 +20,16 @@ module.exports = {
                 dark: themeStyle.dark,
                 neutral: themeStyle.neutral,
                 neutralAlt: themeStyle.neutralAlt,
-                primary: themeStyle.primary
+                primary: themeStyle.primary,
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
+                card: 'var(--card)',
+                'card-foreground': 'var(--card-foreground)',
+                'primary-foreground': 'var(--primary-foreground)',
+                'muted-foreground': 'var(--muted-foreground)',
+                border: 'var(--border)',
+                input: 'var(--input)',
+                ring: 'var(--ring)'
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
