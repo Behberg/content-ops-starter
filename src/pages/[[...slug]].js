@@ -159,11 +159,11 @@ const HomePage = () => {
                 <span className="text-xs font-semibold text-primary">Behman & Bergman</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" data-cms-edit="hero_title">
                 Your partner in <span className="gradient-text">staffing & recruiting</span>
               </h1>
 
-              <p className="text-xl text-muted-foreground mb-8 max-w-xl">
+              <p className="text-xl text-muted-foreground mb-8 max-w-xl" data-cms-edit="hero_description">
                 Executive search agency worth your time. We connect top talent with innovative companies.
               </p>
 
@@ -197,8 +197,8 @@ const HomePage = () => {
 
           <div className="container relative z-10">
             <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4">About Our Services</h2>
-              <p className="text-xl text-muted-foreground">Hiring - made easy.</p>
+              <h2 className="text-4xl font-bold mb-4" data-cms-edit="services_title">About Our Services</h2>
+              <p className="text-xl text-muted-foreground" data-cms-edit="services_subtitle">Hiring - made easy.</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8" ref={servicesRef}>
@@ -238,8 +238,8 @@ const HomePage = () => {
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                    <p className="text-muted-foreground">{service.description}</p>
+                    <h3 className="text-xl font-bold mb-3" data-cms-edit={`service_${idx}_title`}>{service.title}</h3>
+                    <p className="text-muted-foreground" data-cms-edit={`service_${idx}_description`}>{service.description}</p>
                   </div>
                 );
               })}
@@ -253,8 +253,8 @@ const HomePage = () => {
           </div>
           <div className="container">
             <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4">Our field of expertise</h2>
-              <p className="text-xl text-muted-foreground">
+              <h2 className="text-4xl font-bold mb-4" data-cms-edit="expertise_title">Our field of expertise</h2>
+              <p className="text-xl text-muted-foreground" data-cms-edit="expertise_subtitle">
                 Although we try to help with all our client recruitment needs, these are the ones we outshine our competition in.
               </p>
             </div>
@@ -317,8 +317,8 @@ const HomePage = () => {
 
           <div className="container relative z-10">
             <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4">Meet the team</h2>
-              <p className="text-xl text-muted-foreground">Experienced professionals dedicated to your success.</p>
+              <h2 className="text-4xl font-bold mb-4" data-cms-edit="team_title">Meet the team</h2>
+              <p className="text-xl text-muted-foreground" data-cms-edit="team_subtitle">Experienced professionals dedicated to your success.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -340,19 +340,19 @@ const HomePage = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-64 object-cover rounded-lg mb-4"
+                    className="w-full h-40 object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-lg font-bold">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2">{member.role}</p>
-                  <p className="text-muted-foreground text-sm">{member.description}</p>
+                  <h3 className="text-lg font-bold" data-cms-edit={`team_${idx}_name`}>{member.name}</h3>
+                  <p className="text-primary font-semibold mb-2" data-cms-edit={`team_${idx}_role`}>{member.role}</p>
+                  <p className="text-muted-foreground text-sm" data-cms-edit={`team_${idx}_description`}>{member.description}</p>
                 </div>
               ))}
             </div>
 
             <div className="mt-20">
               <div className="mb-12">
-                <h2 className="text-4xl font-bold mb-4">Our Clients</h2>
-                <p className="text-xl text-muted-foreground">Trusted by leading companies across banking, consulting, and technology.</p>
+                <h2 className="text-4xl font-bold mb-4" data-cms-edit="clients_title">Our Clients</h2>
+                <p className="text-xl text-muted-foreground" data-cms-edit="clients_subtitle">Trusted by leading companies across banking, consulting, and technology.</p>
               </div>
 
               <div className="relative overflow-hidden">
@@ -397,8 +397,8 @@ const HomePage = () => {
           </div>
           <div className="container max-w-2xl relative z-10">
             <div className="mb-12">
-              <h2 className="text-4xl font-bold mb-4">Hire with us today!</h2>
-              <p className="text-xl text-muted-foreground">
+              <h2 className="text-4xl font-bold mb-4" data-cms-edit="contact_title">Hire with us today!</h2>
+              <p className="text-xl text-muted-foreground" data-cms-edit="contact_subtitle">
                 Send us a message and one of our consultants will be with you as soon as possible to assist you!
               </p>
             </div>
