@@ -305,13 +305,12 @@ const HomePage = () => {
                     transition: `all 0.6s ease-out ${idx * 0.1}s`,
                   }}
                 >
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
                       <img
                         src={expertise.icon}
                         alt={expertise.name}
-                        className="w-6 h-6 brightness-150 contrast-125"
-                        style={{ filter: 'brightness(1.5) contrast(1.25) invert(0) hue-rotate(0deg)' }}
+                        className="w-6 h-6"
                       />
                     </div>
                   </div>
@@ -359,7 +358,7 @@ const HomePage = () => {
                 },
               ].map((member, idx) => (
                 <div key={idx} className="glass p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition">
-                  <div className="w-full aspect-square mb-4 overflow-hidden rounded-lg">
+                  <div className="w-1/2 aspect-square mb-4 overflow-hidden rounded-lg mx-auto">
                     <img
                       src={member.image}
                       alt={member.name}
