@@ -257,12 +257,6 @@ sections:
           We wear our placements like a badge of honour. Our precision and deep
           diving into our client needs allow us to deliver top of the line
           candidates and this is also visible in our retention rate.
-        image:
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
