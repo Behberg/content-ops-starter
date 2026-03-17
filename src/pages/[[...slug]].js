@@ -162,26 +162,30 @@ const HomePage = () => {
 
       <div className="min-h-screen bg-background text-foreground">
         <nav className="fixed top-0 w-full z-50 glass border-b border-border">
-          <div className="container flex items-center justify-between h-16">
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-xl font-bold gradient-text cursor-pointer hover:opacity-80 transition">B&B</button>
-            <div className="hidden md:flex gap-8">
-              <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition">
+          <div className="container flex items-center justify-between h-16 px-4 sm:px-6">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-lg sm:text-xl font-bold gradient-text cursor-pointer hover:opacity-80 transition">B&B</button>
+            <div className="hidden md:flex gap-6 lg:gap-8">
+              <a href="#services" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                 Services
               </a>
-              <a href="#expertise" className="text-sm text-muted-foreground hover:text-foreground transition">
+              <a href="#expertise" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                 Expertise
               </a>
-              <a href="#team" className="text-sm text-muted-foreground hover:text-foreground transition">
+              <a href="#team" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                 Team
               </a>
-              <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition">
+              <a href="#contact" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                 Contact
               </a>
+            </div>
+            <div className="md:hidden flex gap-3">
+              <a href="#services" className="text-xs text-muted-foreground hover:text-foreground transition">Services</a>
+              <a href="#contact" className="text-xs text-muted-foreground hover:text-foreground transition">Contact</a>
             </div>
           </div>
         </nav>
 
-        <section className="relative pt-32 pb-20 overflow-hidden">
+        <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
           <div
             className="absolute inset-0 -z-10"
             style={{
@@ -196,29 +200,29 @@ const HomePage = () => {
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background -z-10" />
 
-          <div className="container relative z-10">
+          <div className="container relative z-10 px-4 sm:px-6">
             <div className="max-w-2xl">
-              <div className="inline-block mb-6 px-4 py-2 rounded-full glass border border-primary/20">
+              <div className="inline-block mb-4 sm:mb-6 px-3 sm:px-4 py-2 rounded-full glass border border-primary/20">
                 <span className="text-xs font-semibold text-blue-300 brightness-150 font-bold">Behman & Bergman</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" data-cms-edit="hero_title">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight" data-cms-edit="hero_title">
                 Your partner in <span className="gradient-text">staffing & recruiting</span>
               </h1>
 
-              <p className="text-xl text-muted-foreground mb-8 max-w-xl" data-cms-edit="hero_description">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-xl" data-cms-edit="hero_description">
                 Executive search agency worth your time. We connect top talent with innovative companies.
               </p>
 
-              <div className="flex gap-4">
-                <a href="mailto:info@behberg.com" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 px-6 py-3 rounded-lg font-semibold flex items-center transition">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a href="mailto:info@behberg.com" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold flex items-center justify-center sm:justify-start transition text-sm sm:text-base">
                   Get started
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <button onClick={() => {
                   const servicesSection = document.getElementById('services');
                   servicesSection?.scrollIntoView({ behavior: 'smooth' });
-                }} className="border border-primary/20 hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition">
+                }} className="border border-primary/20 hover:bg-primary/10 px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition text-sm sm:text-base">
                   Learn more
                 </button>
               </div>
@@ -241,13 +245,13 @@ const HomePage = () => {
             }}
           />
 
-          <div className="container relative z-10">
-            <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4" data-cms-edit="services_title">About Our Services</h2>
-              <p className="text-xl text-muted-foreground" data-cms-edit="services_subtitle">Hiring - made easy.</p>
+          <div className="container relative z-10 px-4 sm:px-6">
+            <div className="mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4" data-cms-edit="services_title">About Our Services</h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground" data-cms-edit="services_subtitle">Hiring - made easy.</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8" ref={servicesRef}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8" ref={servicesRef}>
               {[
                 {
                   icon: Briefcase,
@@ -272,20 +276,20 @@ const HomePage = () => {
                 return (
                   <div
                     key={idx}
-                    className="group glass p-8 rounded-xl hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    className="group glass p-4 sm:p-6 md:p-8 rounded-xl hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
                     style={{
                       opacity: servicesInView ? 1 : 0,
                       transform: servicesInView ? 'translateY(0)' : 'translateY(20px)',
                       transition: `all 0.6s ease-out ${idx * 0.1}s`,
                     }}
                   >
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
-                        <Icon className="w-6 h-6 text-blue-300" />
+                    <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
+                      <div className="p-2 sm:p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition flex-shrink-0">
+                        <Icon className="w-5 sm:w-6 h-5 sm:h-6 text-blue-300" />
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold mb-3" data-cms-edit={`service_${idx}_title`}>{service.title}</h3>
-                    <p className="text-muted-foreground" data-cms-edit={`service_${idx}_description`}>{service.description}</p>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" data-cms-edit={`service_${idx}_title`}>{service.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground" data-cms-edit={`service_${idx}_description`}>{service.description}</p>
                   </div>
                 );
               })}
@@ -297,15 +301,15 @@ const HomePage = () => {
           <div className="absolute inset-0 -z-10 overflow-hidden">
             <ParticleBackground />
           </div>
-          <div className="container">
-            <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4" data-cms-edit="expertise_title">Our field of expertise</h2>
-              <p className="text-xl text-muted-foreground" data-cms-edit="expertise_subtitle">
+          <div className="container px-4 sm:px-6">
+            <div className="mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4" data-cms-edit="expertise_title">Our field of expertise</h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground" data-cms-edit="expertise_subtitle">
                 Although we try to help with all our client recruitment needs, these are the ones we outshine our competition in.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-6 gap-4 justify-items-center" ref={expertiseRef}>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 justify-items-center" ref={expertiseRef}>
               {[
                 {
                   name: 'Software Development',
@@ -336,22 +340,22 @@ const HomePage = () => {
                 return (
                   <div
                     key={idx}
-                    className="group glass p-3 rounded-lg border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
+                    className="group glass p-2 sm:p-3 rounded-lg border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
                     style={{
                       opacity: expertiseInView ? 1 : 0,
                       transform: expertiseInView ? 'translateY(0)' : 'translateY(20px)',
                       transition: `all 0.6s ease-out ${idx * 0.1}s`,
                       aspectRatio: '1 / 1',
-                      width: '120px',
-                      height: '120px',
+                      width: 'clamp(80px, 100%, 120px)',
+                      height: 'clamp(80px, 100%, 120px)',
                     }}
                   >
-                    <div className="flex items-center justify-center mb-2">
-                      <div className="p-2 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
-                        <Icon className="w-4 h-4 text-blue-300" />
+                    <div className="flex items-center justify-center mb-1 sm:mb-2">
+                      <div className="p-1.5 sm:p-2 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
+                        <Icon className="w-3 sm:w-4 h-3 sm:h-4 text-blue-300" />
                       </div>
                     </div>
-                    <h3 className="text-xs font-bold text-center">{expertise.name}</h3>
+                    <h3 className="text-xs font-bold text-center line-clamp-2">{expertise.name}</h3>
                   </div>
                 );
               })}
@@ -374,13 +378,13 @@ const HomePage = () => {
             }}
           />
 
-          <div className="container relative z-10">
-            <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-4" data-cms-edit="team_title">Meet the team</h2>
-              <p className="text-xl text-muted-foreground" data-cms-edit="team_subtitle">Experienced professionals dedicated to your success.</p>
+          <div className="container relative z-10 px-4 sm:px-6">
+            <div className="mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4" data-cms-edit="team_title">Meet the team</h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground" data-cms-edit="team_subtitle">Experienced professionals dedicated to your success.</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
                   name: 'Krists Afanasjevs',
@@ -395,25 +399,25 @@ const HomePage = () => {
                   image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/team-member-1_6833de15.jpg',
                 },
               ].map((member, idx) => (
-                <div key={idx} className="glass p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition">
-                  <div className="w-1/2 aspect-square mb-4 overflow-hidden rounded-lg mx-auto">
+                <div key={idx} className="glass p-4 sm:p-6 md:p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition">
+                  <div className="w-1/2 aspect-square mb-3 sm:mb-4 overflow-hidden rounded-lg mx-auto">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-bold" data-cms-edit={`team_${idx}_name`}>{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2 brightness-125" data-cms-edit={`team_${idx}_role`}>{member.role}</p>
-                  <p className="text-muted-foreground text-sm" data-cms-edit={`team_${idx}_description`}>{member.description}</p>
+                  <h3 className="text-base sm:text-lg font-bold" data-cms-edit={`team_${idx}_name`}>{member.name}</h3>
+                  <p className="text-primary font-semibold mb-1 sm:mb-2 brightness-125 text-sm" data-cms-edit={`team_${idx}_role`}>{member.role}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm" data-cms-edit={`team_${idx}_description`}>{member.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-20">
-              <div className="mb-12">
-                <h2 className="text-4xl font-bold mb-4" data-cms-edit="clients_title">Our Clients</h2>
-                <p className="text-xl text-muted-foreground" data-cms-edit="clients_subtitle">Trusted by leading companies across banking, consulting, and technology.</p>
+            <div className="mt-16 sm:mt-20">
+              <div className="mb-8 sm:mb-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4" data-cms-edit="clients_title">Our Clients</h2>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground" data-cms-edit="clients_subtitle">Trusted by leading companies across banking, consulting, and technology.</p>
               </div>
 
               <div className="relative overflow-hidden">
@@ -451,103 +455,103 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section id="contact" className="py-20 relative overflow-hidden">
+        <section id="contact" className="py-16 sm:py-20 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 overflow-hidden">
             <ParticleBackground />
           </div>
-          <div className="container max-w-2xl relative z-10">
-            <div className="mb-12">
-              <h2 className="text-4xl font-bold mb-4" data-cms-edit="contact_title">Hire with us today!</h2>
-              <p className="text-xl text-muted-foreground" data-cms-edit="contact_subtitle">
+          <div className="container max-w-2xl relative z-10 px-4 sm:px-6">
+            <div className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4" data-cms-edit="contact_title">Hire with us today!</h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground" data-cms-edit="contact_subtitle">
                 Send us a message and one of our consultants will be with you as soon as possible to assist you!
               </p>
             </div>
 
-            <div className="glass border-primary/20 border rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-2">Get in touch</h3>
-              <p className="text-muted-foreground mb-6">We'll respond within 24 hours</p>
-              <form onSubmit={handleFormSubmit} className="space-y-6">
+            <div className="glass border-primary/20 border rounded-lg p-4 sm:p-6 md:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Get in touch</h3>
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">We'll respond within 24 hours</p>
+              <form onSubmit={handleFormSubmit} className="space-y-4 sm:space-y-6">
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Name</label>
+                  <label className="text-xs sm:text-sm font-medium mb-2 block">Name</label>
                   <input
                     name="name"
                     value={formData.name}
                     onChange={handleFormChange}
                     placeholder="Your name"
-                    className="w-full bg-input border border-border rounded-lg px-4 py-2 focus:border-primary focus:ring-primary focus:outline-none"
+                    className="w-full bg-input border border-border rounded-lg px-3 sm:px-4 py-2 text-sm sm:text-base focus:border-primary focus:ring-primary focus:outline-none"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
+                  <label className="text-xs sm:text-sm font-medium mb-2 block">Email</label>
                   <input
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleFormChange}
                     placeholder="your@email.com"
-                    className="w-full bg-input border border-border rounded-lg px-4 py-2 focus:border-primary focus:ring-primary focus:outline-none"
+                    className="w-full bg-input border border-border rounded-lg px-3 sm:px-4 py-2 text-sm sm:text-base focus:border-primary focus:ring-primary focus:outline-none"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Message</label>
+                  <label className="text-xs sm:text-sm font-medium mb-2 block">Message</label>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleFormChange}
                     placeholder="Tell us about your hiring needs..."
-                    className="w-full bg-input border border-border rounded-lg px-4 py-2 focus:border-primary focus:ring-primary focus:outline-none min-h-32"
+                    className="w-full bg-input border border-border rounded-lg px-3 sm:px-4 py-2 text-sm sm:text-base focus:border-primary focus:ring-primary focus:outline-none min-h-24 sm:min-h-32"
                     required
                   />
                 </div>
 
-                <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition">
+                <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2 sm:py-3 rounded-lg flex items-center justify-center gap-2 transition text-sm sm:text-base">
                   Send message
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </form>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-8">
-              <div className="flex gap-4">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+              <div className="flex gap-3 sm:gap-4">
+                <Mail className="w-4 sm:w-5 h-4 sm:h-5 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <a href="mailto:info@behberg.com" className="font-semibold hover:text-primary transition">
+                  <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
+                  <a href="mailto:info@behberg.com" className="text-sm sm:text-base font-semibold hover:text-primary transition break-all">
                     info@behberg.com
                   </a>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+              <div className="flex gap-3 sm:gap-4">
+                <MapPin className="w-4 sm:w-5 h-4 sm:h-5 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-semibold">Riga, Latvia</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Location</p>
+                  <p className="text-sm sm:text-base font-semibold">Riga, Latvia</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-border py-12 bg-card/50">
-          <div className="container">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <footer className="border-t border-border py-8 sm:py-12 bg-card/50">
+          <div className="container px-4 sm:px-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
               <div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
                   © 2026 Behman & Bergman. All rights reserved.
                 </p>
               </div>
-              <div className="flex gap-6">
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
+              <div className="flex gap-4 sm:gap-6">
+                <a href="#" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                   Privacy
                 </a>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
+                <a href="#" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                   Terms
                 </a>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition">
+                <a href="#" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition">
                   LinkedIn
                 </a>
               </div>
