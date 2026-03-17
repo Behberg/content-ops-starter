@@ -236,12 +236,6 @@ sections:
           Most of the time, a 3 month probation period is not enough. We offer
           up to 6 months of our guarantees in which we offer to replace the
           candidate, free of charge.
-        image:
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
