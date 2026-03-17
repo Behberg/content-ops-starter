@@ -37,6 +37,7 @@ const ParticleBackground = () => {
 
     const particles = [];
     const particleCount = 50;
+    const largeParticleCount = 5;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
@@ -46,6 +47,19 @@ const ParticleBackground = () => {
         vy: (Math.random() - 0.5) * 0.5,
         size: Math.random() * 1.5,
         opacity: Math.random() * 0.5 + 0.2,
+        isLarge: false,
+      });
+    }
+
+    for (let i = 0; i < largeParticleCount; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: (Math.random() - 0.5) * 0.15,
+        size: Math.random() * 40 + 30,
+        opacity: Math.random() * 0.15 + 0.05,
+        isLarge: true,
       });
     }
 
@@ -65,6 +79,14 @@ const ParticleBackground = () => {
         ctx.globalAlpha = p.opacity;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        
+        if (p.isLarge) {
+          const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size);
+          gradient.addColorStop(0, 'rgba(59, 130, 246, 0.3)');
+          gradient.addColorStop(1, 'rgba(99, 102, 241, 0.05)');
+          ctx.fillStyle = gradient;
+        }
+        
         ctx.fill();
       });
 
@@ -156,7 +178,7 @@ const HomePage = () => {
           <div className="container relative z-10">
             <div className="max-w-2xl">
               <div className="inline-block mb-6 px-4 py-2 rounded-full glass border border-primary/20">
-                <span className="text-xs font-semibold text-primary">Behman & Bergman</span>
+                <span className="text-xs font-semibold text-primary brightness-125">Behman & Bergman</span>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" data-cms-edit="hero_title">
@@ -337,13 +359,16 @@ const HomePage = () => {
                 },
               ].map((member, idx) => (
                 <div key={idx} className="glass p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-40 object-cover rounded-lg mb-4"
-                  />
+                  <div className="w-full h-40 mb-4 overflow-hidden rounded-lg">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      style={{ aspectRatio: '16/9' }}
+                    />
+                  </div>
                   <h3 className="text-lg font-bold" data-cms-edit={`team_${idx}_name`}>{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2" data-cms-edit={`team_${idx}_role`}>{member.role}</p>
+                  <p className="text-primary font-semibold mb-2 brightness-125" data-cms-edit={`team_${idx}_role`}>{member.role}</p>
                   <p className="text-muted-foreground text-sm" data-cms-edit={`team_${idx}_description`}>{member.description}</p>
                 </div>
               ))}
