@@ -37,7 +37,8 @@ const ParticleBackground = () => {
 
     const particles = [];
     const particleCount = 50;
-    const largeParticleCount = 5;
+    const largeParticleCount = 8;
+    const extraLargeParticleCount = 3;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
@@ -60,6 +61,19 @@ const ParticleBackground = () => {
         size: Math.random() * 40 + 30,
         opacity: Math.random() * 0.15 + 0.05,
         isLarge: true,
+      });
+    }
+
+    for (let i = 0; i < extraLargeParticleCount; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.08,
+        vy: (Math.random() - 0.5) * 0.08,
+        size: Math.random() * 80 + 60,
+        opacity: Math.random() * 0.1 + 0.02,
+        isLarge: true,
+        isExtraLarge: true,
       });
     }
 
@@ -190,11 +204,14 @@ const HomePage = () => {
               </p>
 
               <div className="flex gap-4">
-                <button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 px-6 py-3 rounded-lg font-semibold flex items-center transition">
+                <a href="mailto:info@behberg.com" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 px-6 py-3 rounded-lg font-semibold flex items-center transition">
                   Get started
                   <ArrowRight className="w-4 h-4" />
-                </button>
-                <button className="border border-primary/20 hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition">
+                </a>
+                <button onClick={() => {
+                  const servicesSection = document.getElementById('services');
+                  servicesSection?.scrollIntoView({ behavior: 'smooth' });
+                }} className="border border-primary/20 hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition">
                   Learn more
                 </button>
               </div>
@@ -394,7 +411,6 @@ const HomePage = () => {
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (3)_d8d93f6a.png',
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (4)_d6a81dfc.png',
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (5)_854f4938.png',
-                    'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (6)_0e074f64.png',
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design_1f2cf0c5.png',
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (1)_70a983c9.png',
                     'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/Untitled design (2)_f6e51d0a.png',
@@ -404,7 +420,7 @@ const HomePage = () => {
                         src={logo}
                         alt={`Client ${idx + 1}`}
                         className="h-20 object-contain opacity-70 hover:opacity-100 transition"
-                        style={{ background: 'transparent' }}
+                        style={{ filter: 'invert(1) brightness(1.1)', background: 'transparent' }}
                       />
                     </div>
                   ))}
