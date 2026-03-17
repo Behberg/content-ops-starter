@@ -215,12 +215,6 @@ sections:
           Once a role has been assigned to us, we execute it with quality and
           precision. Often we already have a good backlog of candidates that we
           can offer from the get go.
-        image:
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
