@@ -178,7 +178,7 @@ const HomePage = () => {
           <div className="container relative z-10">
             <div className="max-w-2xl">
               <div className="inline-block mb-6 px-4 py-2 rounded-full glass border border-primary/20">
-                <span className="text-xs font-semibold text-primary brightness-125">Behman & Bergman</span>
+                <span className="text-xs font-semibold text-blue-300 brightness-150 font-bold">Behman & Bergman</span>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" data-cms-edit="hero_title">
@@ -256,8 +256,8 @@ const HomePage = () => {
                     }}
                   >
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
+                        <Icon className="w-6 h-6 text-blue-300" />
                       </div>
                     </div>
                     <h3 className="text-xl font-bold mb-3" data-cms-edit={`service_${idx}_title`}>{service.title}</h3>
@@ -359,12 +359,11 @@ const HomePage = () => {
                 },
               ].map((member, idx) => (
                 <div key={idx} className="glass p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition">
-                  <div className="w-full h-40 mb-4 overflow-hidden rounded-lg">
+                  <div className="w-full aspect-square mb-4 overflow-hidden rounded-lg">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover"
-                      style={{ aspectRatio: '16/9' }}
                     />
                   </div>
                   <h3 className="text-lg font-bold" data-cms-edit={`team_${idx}_name`}>{member.name}</h3>
