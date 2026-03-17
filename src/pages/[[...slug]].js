@@ -298,7 +298,7 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4" ref={expertiseRef}>
+            <div className="grid md:grid-cols-6 gap-4 justify-items-center" ref={expertiseRef}>
               {[
                 {
                   name: 'Software Development',
@@ -329,20 +329,22 @@ const HomePage = () => {
                 return (
                   <div
                     key={idx}
-                    className="group glass p-4 rounded-xl border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
+                    className="group glass p-3 rounded-lg border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
                     style={{
                       opacity: expertiseInView ? 1 : 0,
                       transform: expertiseInView ? 'translateY(0)' : 'translateY(20px)',
                       transition: `all 0.6s ease-out ${idx * 0.1}s`,
                       aspectRatio: '1 / 1',
+                      width: '120px',
+                      height: '120px',
                     }}
                   >
-                    <div className="flex items-center justify-center mb-4">
-                      <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
-                        <Icon className="w-6 h-6 text-blue-300" />
+                    <div className="flex items-center justify-center mb-2">
+                      <div className="p-2 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
+                        <Icon className="w-4 h-4 text-blue-300" />
                       </div>
                     </div>
-                    <h3 className="text-sm font-bold">{expertise.name}</h3>
+                    <h3 className="text-xs font-bold text-center">{expertise.name}</h3>
                   </div>
                 );
               })}
