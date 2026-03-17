@@ -230,7 +230,10 @@ sections:
         textAlign: center
     type: GenericSection
   - type: CarouselSection
-    title: null
+    title:
+      type: TitleBlock
+      text: This Is A Big Headline
+      color: text-dark
     subtitle: ''
     items:
       - title: First candidates within 48 hours
