@@ -10,7 +10,8 @@
     }
     
     .glass {
-        @apply bg-card/50 backdrop-blur-xl border border-border rounded-xl;
+        @apply backdrop-blur-xl border border-border rounded-xl;
+        background-color: rgba(10, 15, 26, 0.5);
     }
     
     .gradient-text {
