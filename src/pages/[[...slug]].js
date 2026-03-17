@@ -7,7 +7,7 @@ import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
 import { resolveStaticPaths } from '../utils/static-paths-resolvers';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
-import { ArrowRight, Briefcase, CheckCircle, Users, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Briefcase, CheckCircle, Users, Mail, MapPin, Code2, Shield, TrendingUp, FileText } from 'lucide-react';
 
 const useInView = (ref, options = {}) => {
   const [isInView, setIsInView] = useState(false);
@@ -36,18 +36,18 @@ const ParticleBackground = () => {
     canvas.height = canvas.offsetHeight;
 
     const particles = [];
-    const particleCount = 50;
-    const largeParticleCount = 8;
-    const extraLargeParticleCount = 3;
+    const particleCount = 30;
+    const largeParticleCount = 12;
+    const extraLargeParticleCount = 6;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 1.5,
-        opacity: Math.random() * 0.5 + 0.2,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        size: Math.random() * 3 + 2,
+        opacity: Math.random() * 0.7 + 0.4,
         isLarge: false,
       });
     }
@@ -56,10 +56,10 @@ const ParticleBackground = () => {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.15,
-        vy: (Math.random() - 0.5) * 0.15,
-        size: Math.random() * 40 + 30,
-        opacity: Math.random() * 0.15 + 0.05,
+        vx: (Math.random() - 0.5) * 0.12,
+        vy: (Math.random() - 0.5) * 0.12,
+        size: Math.random() * 80 + 60,
+        opacity: Math.random() * 0.35 + 0.2,
         isLarge: true,
       });
     }
@@ -68,10 +68,10 @@ const ParticleBackground = () => {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.08,
-        vy: (Math.random() - 0.5) * 0.08,
-        size: Math.random() * 80 + 60,
-        opacity: Math.random() * 0.1 + 0.02,
+        vx: (Math.random() - 0.5) * 0.06,
+        vy: (Math.random() - 0.5) * 0.06,
+        size: Math.random() * 200 + 150,
+        opacity: Math.random() * 0.25 + 0.15,
         isLarge: true,
         isExtraLarge: true,
       });
@@ -156,7 +156,7 @@ const HomePage = () => {
       <div className="min-h-screen bg-background text-foreground">
         <nav className="fixed top-0 w-full z-50 glass border-b border-border">
           <div className="container flex items-center justify-between h-16">
-            <div className="text-xl font-bold gradient-text">B&B</div>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-xl font-bold gradient-text cursor-pointer hover:opacity-80 transition">B&B</button>
             <div className="hidden md:flex gap-8">
               <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition">
                 Services
@@ -302,38 +302,51 @@ const HomePage = () => {
               {[
                 {
                   name: 'Software Development',
-                  icon: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/icon-software-dev-lines-kSEhdaZiNj6WcnEymXYxyk.webp',
+                  icon: Code2,
                 },
                 {
                   name: 'Risk & Compliance',
-                  icon: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/icon-risk-compliance-lines-VpUjFSXFra66czCjK2saPa.webp',
+                  icon: Shield,
                 },
                 {
                   name: 'Product Management',
-                  icon: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/icon-product-management-lines-NebtkeUPmqn3ZTbD7Dp3Kq.webp',
+                  icon: Briefcase,
                 },
-              ].map((expertise, idx) => (
-                <div
-                  key={idx}
-                  className="group glass p-8 rounded-xl border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
-                  style={{
-                    opacity: expertiseInView ? 1 : 0,
-                    transform: expertiseInView ? 'translateY(0)' : 'translateY(20px)',
-                    transition: `all 0.6s ease-out ${idx * 0.1}s`,
-                  }}
-                >
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
-                      <img
-                        src={expertise.icon}
-                        alt={expertise.name}
-                        className="w-6 h-6"
-                      />
+                {
+                  name: 'Fintech & Banking',
+                  icon: TrendingUp,
+                },
+                {
+                  name: 'Legal & Compliance',
+                  icon: FileText,
+                },
+                {
+                  name: 'Executive Search',
+                  icon: Users,
+                },
+              ].map((expertise, idx) => {
+                const Icon = expertise.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="group glass p-8 rounded-xl border border-primary/10 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 flex flex-col items-center justify-center text-center"
+                    style={{
+                      opacity: expertiseInView ? 1 : 0,
+                      transform: expertiseInView ? 'translateY(0)' : 'translateY(20px)',
+                      transition: `all 0.6s ease-out ${idx * 0.1}s`,
+                      aspectRatio: '1 / 1',
+                    }}
+                  >
+                    <div className="flex items-center justify-center mb-4">
+                      <div className="p-3 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition">
+                        <Icon className="w-6 h-6 text-blue-300" />
+                      </div>
                     </div>
+                    <h3 className="text-lg font-bold">{expertise.name}</h3>
                   </div>
-                  <h3 className="text-lg font-bold">{expertise.name}</h3>
-                </div>
-              ))}
+                );
+              })}
+            </div>
             </div>
           </div>
         </section>
@@ -419,8 +432,8 @@ const HomePage = () => {
                       <img
                         src={logo}
                         alt={`Client ${idx + 1}`}
-                        className="h-20 object-contain opacity-70 hover:opacity-100 transition"
-                        style={{ filter: 'invert(1) brightness(1.1)', background: 'transparent' }}
+                        className="h-20 object-contain opacity-70 hover:opacity-100 transition rounded-lg p-2"
+                        style={{ filter: 'invert(1) brightness(1.1)', backgroundColor: '#1a1f3a', background: '#1a1f3a' }}
                       />
                     </div>
                   ))}
