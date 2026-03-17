@@ -154,6 +154,9 @@ const HomePage = () => {
         <meta property="og:title" content="B&B Recruitment | Executive Search & Staffing Agency" />
         <meta property="og:description" content="Premium recruitment services for IT, fintech, legal, and compliance professionals in Latvia." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663447629664/eCAdB9wHVnckPGuC7GU43J/behberg-landing-screenshot_9cc0f40f.webp" />
+        <meta property="og:image:width" content="1536" />
+        <meta property="og:image:height" content="1024" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
