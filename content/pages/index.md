@@ -513,7 +513,7 @@ sections:
 seo:
   metaTitle: ''
   metaDescription: Technology and Financial recruitment agency with strong track record
-  socialImage: /images/main-hero.jpg
+  socialImage: /images/New Project (1).svg
   type: Seo
 type: PageLayout
 ---
