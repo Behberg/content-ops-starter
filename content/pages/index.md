@@ -232,7 +232,7 @@ sections:
   - type: CarouselSection
     title:
       type: TitleBlock
-      text: This Is A Big Headline
+      text: Why our partners keep choosing us?
       color: text-dark
     subtitle: ''
     items:
