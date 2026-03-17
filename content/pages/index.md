@@ -201,34 +201,6 @@ sections:
           - pb-7
           - pr-7
     type: DividerSection
-  - title:
-      text: Grow your business 10x faster
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: Why our partners keep choosing us?
-    text: |+
-      <div style="text-align: left"></div>
-
-    badge:
-      label: ''
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-      text:
-        textAlign: center
-    type: GenericSection
   - type: CarouselSection
     title:
       type: TitleBlock
