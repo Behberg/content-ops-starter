@@ -148,8 +148,12 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Behman & Bergman - Executive Search & Recruitment</title>
-        <meta name="description" content="Your partner in staffing & recruiting. Executive search agency connecting top talent with innovative companies." />
+        <title>B&B Recruitment | Executive Search & Staffing Agency in Riga</title>
+        <meta name="description" content="B&B Recruitment is a leading executive search and staffing agency in Riga, Latvia. We specialize in IT, fintech, legal, and compliance recruitment. Connect with top talent through our success-based and subscription services." />
+        <meta name="keywords" content="executive search, recruitment agency, staffing services, IT recruitment, fintech jobs, legal recruitment, compliance hiring, Riga Latvia" />
+        <meta property="og:title" content="B&B Recruitment | Executive Search & Staffing Agency" />
+        <meta property="og:description" content="Premium recruitment services for IT, fintech, legal, and compliance professionals in Latvia." />
+        <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
