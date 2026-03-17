@@ -512,7 +512,7 @@ sections:
       url: /images/pexels-codioful-7130566.jpg
 seo:
   metaTitle: ''
-  metaDescription: This demo site is built with Netlify Create.
+  metaDescription: Technology and Financial recruitment agency with strong track record
   socialImage: /images/main-hero.jpg
   type: Seo
 type: PageLayout
