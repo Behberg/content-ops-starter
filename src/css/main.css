@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .container {
+        @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl;
+    }
+    
+    .glass {
+        @apply bg-card/50 backdrop-blur-xl border border-border rounded-xl;
+    }
+    
+    .gradient-text {
+        @apply bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent;
+    }
+}
+
 @layer base {
     :root {
         --primary: #3B82F6;
