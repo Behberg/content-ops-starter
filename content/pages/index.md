@@ -511,7 +511,8 @@ sections:
       opacity: 100
       url: /images/pexels-codioful-7130566.jpg
 seo:
-  metaTitle: Home - Demo site
+  metaTitle: B&B Recruitment
+  addTitleSuffix: false
   metaDescription: This demo site is built with Netlify Create.
   socialImage: /images/main-hero.jpg
   type: Seo
